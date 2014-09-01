@@ -345,7 +345,7 @@ public:
 	void AddLaser(Laser new_laser)
 	{
 		for(auto &laser: lasers_) {
-			//! 使用済み
+			//! 未使用
 			if(!laser.IsUsed()) {
 				laser = new_laser;
 				break;
@@ -408,7 +408,6 @@ private:
 	std::vector<Laser> lasers_;
 };
 
-// データ定義
 class Boss
 {
 public:
